@@ -42,7 +42,7 @@ export default function Form() {
 
   return (
     <>
-      <form className="bg-cyan-200 p-4 flex justify-between gap-3 rounded-md">
+      <form className="bg-slate-500 p-4 flex justify-between gap-3 rounded-md">
         <input
           type="text"
           className="border border-gray-300 focus:border-blue-500 rounded-lg px-4 py-2 outline-none w-full"
@@ -53,7 +53,7 @@ export default function Form() {
         <button
           type="button"
           onClick={addTask}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded"
+          className="bg-orange-300 hover:bg-orange-400 text-slate-600 font-bold py-2 px-8 rounded-[6px] w-[100px]"
         >
           Add Task
         </button>

@@ -11,7 +11,7 @@ export const List: React.FC<hjhjh> = ({
   onStatusChange,
 }) => {
   return (
-    <div className="flex justify-between my-2 border-b-2 pb-2 px-3">
+    <div className="flex justify-between items-center my-2 border-b-2 pb-2 px-3 text-middle mx-auto">
       <div className="flex space-x-4">
         <input
           type="checkbox"
@@ -19,14 +19,14 @@ export const List: React.FC<hjhjh> = ({
           className="w-4"
           onClick={onStatusChange}
         />
-        <div className="text-bold">{title}</div>
+        <div className="text-bold mx-auto">{title}</div>
       </div>
-      <div
+      <button
         onClick={onClick}
-        className="cursor-pointer text-red-500/60 border-2 border-red-500/60 rounded-md px-2"
+        className="cursor-pointer text-red-500 border-2 border-red-500 hover:bg-red-200 rounded-md px-3 py-2"
       >
         hapus
-      </div>
+      </button>
     </div>
   );
 };
